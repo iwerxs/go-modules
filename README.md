@@ -48,3 +48,19 @@ another command to use is
     - mod: all downloaded module packages are stored here
       - inside mod is the cache dir, inside is download dir
 
+### GOPROXY
+
+<code>go env | grep "GOPROXY"<code/>
+
+returns
+
+GOPROXY="https://proxy.golang.org,direct"
+
+### GOSUMDB check sum
+
+<code>go env | grep "GOSUMDB"<code/>
+
+returns
+
+GOSUMDB="sum.golang.org"
+
