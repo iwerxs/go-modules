@@ -13,9 +13,12 @@ another way to fetch all of the modules and dependencies is with
 - go test
 
 to clean local golang cache
+
 <code>go clean -cache -modcache -i -r<code/>
 
-then run <code>go build<code/>
+then run
+
+<code>go build<code/>
 
 ### Vendor Directory
 
@@ -44,9 +47,12 @@ another command to use is
 - inside GoPath directory
 
 - bin, pkg, src
-  - inside pkg: dep, mod, sumdb
-    - mod: all downloaded module packages are stored here
-      - inside mod is the cache dir, inside is download dir
+
+- inside pkg: dep, mod, sumdb
+
+- mod: all downloaded module packages are stored here
+
+- inside mod is the cache dir, inside is download dir
 
 ### GOPROXY
 
