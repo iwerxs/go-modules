@@ -14,25 +14,25 @@ another way to fetch all of the modules and dependencies is with
 
 to clean local golang cache
 
-<code>go clean -cache -modcache -i -r<code/>
+<code>go clean -cache -modcache -i -r</code>
 
 then run
 
-<code>go build<code/>
+<code>go build</code>
 
 ### Vendor Directory
 
-<code>go mod vendor<code/>
+<code>go mod vendor</code>
 
 ### Download all modules available for all versions of Go
 
 fetch 3rd party packages from terminal
 
-<code>go list -m -versions (pkg name)<code/>
+<code>go list -m -versions (pkg name)</code>
 
 if vendor directory is present, remove it with
 
-<code>rm -rf vendor<code/>
+<code>rm -rf vendor</code>
 
 then run cmd again
 
@@ -40,7 +40,7 @@ use this to download a 3rd part pkg, library, whilst not knowing which version t
 
 another command to use is
 
-<code>go mod download<code/>
+<code>go mod download</code>
 
 ### Internals of Go Modules and Paths
 
@@ -56,7 +56,7 @@ another command to use is
 
 ### GOPROXY
 
-<code>go env | grep "GOPROXY"<code/>
+<code>go env | grep "GOPROXY"</code>
 
 returns
 
@@ -64,7 +64,7 @@ GOPROXY="https://proxy.golang.org,direct"
 
 ### GOSUMDB check sum
 
-<code>go env | grep "GOSUMDB"<code/>
+<code>go env | grep "GOSUMDB"</code>
 
 returns
 
