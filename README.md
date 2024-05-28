@@ -86,3 +86,13 @@ This Must be written in the path name within the 'import' statement.
 
 - example: rsc.io/quote/v3 gives an upgrade => v3.1.0
 
+To have a list of all of the versions of a package, use the 'list' command
+
+- go list -m -versions (package name)
+
+this can only be used when there is no Vendor directory
+
+within a Go project, to download all of the required packages needed for the project use the command:
+
+- go mod download
+
