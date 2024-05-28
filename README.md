@@ -70,3 +70,18 @@ returns
 
 GOSUMDB="sum.golang.org"
 
+### Semanic Import Versioning
+
+- major version must be compatible: should be v0 or v1, Not v3
+
+There are 3 stages for versioning
+- v0 Unstable
+- v1 Minor Stable
+- v2 Major Stable
+
+there has to explicity after v2 of a module package that needs to be downloaded
+
+this is simply done by adding '/v(num)' a forward slash and then the explicit version number of the package needed to be installed within the module.
+
+- example: rsc.io/quote/v3 gives an upgrade => v3.1.0
+
