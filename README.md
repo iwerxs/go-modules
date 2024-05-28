@@ -12,7 +12,7 @@ another way to fetch all of the modules and dependencies is with
 - go build
 - go test
 
-to clean local golang cache
+to clean the local golang module cache use
 
 <code>go clean -cache -modcache -i -r</code>
 
@@ -82,6 +82,7 @@ There are 3 stages for versioning
 there has to explicity after v2 of a module package that needs to be downloaded
 
 this is simply done by adding '/v(num)' a forward slash and then the explicit version number of the package needed to be installed within the module.
+This Must be written in the path name within the 'import' statement.
 
 - example: rsc.io/quote/v3 gives an upgrade => v3.1.0
 
